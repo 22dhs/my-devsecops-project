@@ -15,3 +15,8 @@ jobs:
         with:
           framework: terraform
           soft_fail: true # This keeps our conveyor belt green while showing warnings!
+          
+# DEVSECOPS UPGRADE: Run our custom-built python tool in the cloud!
+      - name: Run Custom Python Secret Sniffer
+        run: |
+          python sniffer.py
